@@ -1,0 +1,13 @@
+"classname" = React's version of class
+"styles" is the object that we are importing from the css file
+".section" grabs the class from the css file
+
+so if i put styles.section it takes from .section in my css file.
+if i put styles.subtitle it takes from .subtitle in my css file.
+
+its using "styles" and not "page.modules" bc i used import styles
+whatever the name is after import i have to use that name to pull from that file
+
+<section> is the tag we use to group elements together.
+used mostly for grouping things together
+
