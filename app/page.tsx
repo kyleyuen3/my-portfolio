@@ -7,8 +7,9 @@ export default function Home() {
       <div className={styles.content}>
 
         {/* Header */}
-        <h1 className="text-4xl font-bold text-gray-900">Kyle</h1>
-        <p className="text-xl text-gray-600 mt-4">Full Stack Developer</p>
+          <h1 className={styles.title}>Kyle</h1>
+          <p className={styles.subtitle}>Full Stack Developer</p>
+
 
         {/* About Section */}
         <section className={styles.section}>
