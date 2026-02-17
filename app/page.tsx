@@ -32,7 +32,7 @@ export default function Home() {
         {/* About Section */}
         <section id="about" className={styles.section}>
           <h2 className={styles.sectionTitle}>About Me</h2>
-          <p className={styles.text}>My name is Kyle and this is my website.</p>
+          <p className={styles.text}>I’m Kyle Yuen — a Computer Science graduate passionate about Software Development, Artifical Intelligence, and mobile app development. I enjoy solving problems, building projects that help people, and continuously learning. I also enjoy traveling, trying new restaurants and hanging out with friends and family.</p>
         </section>
 
         {/* Project Section */}
