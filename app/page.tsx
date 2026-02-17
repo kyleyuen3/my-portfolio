@@ -4,7 +4,7 @@ import styles from './page.module.css'
 export default function Home() {
   return (
     <main className={styles.container}>
-      <section className={styles.hero} />
+      <section className={`${styles.hero} ${styles.fadeUp}`} />
 
       {/* Header */}
       <header className={styles.header}>
@@ -30,13 +30,13 @@ export default function Home() {
 
       <div className={styles.content}>
         {/* About Section */}
-        <section id="about" className={styles.section}>
+        <section id="about" className={`${styles.section} ${styles.fadeUp} ${styles.delay1}`}>
           <h2 className={styles.sectionTitle}>About Me</h2>
           <p className={styles.text}>I’m Kyle Yuen — a Computer Science graduate passionate about Software Development, Artifical Intelligence, and mobile app development. I enjoy solving problems, building projects that help people, and continuously learning. I also enjoy traveling, trying new restaurants and hanging out with friends and family.</p>
         </section>
 
         {/* Project Section */}
-        <section id="projects" className={styles.section}>
+        <section id="projects" className={`${styles.section} ${styles.fadeUp} ${styles.delay2}`}>
           <h2 className={styles.sectionTitle}>Projects</h2>
           <p className={styles.text}>Currently building Projects</p>
           
@@ -62,7 +62,7 @@ export default function Home() {
         </section>
 
         {/* Contact */}
-        <section id="contact" className={styles.section}>
+        <section id="contact" className={`${styles.section} ${styles.fadeUp} ${styles.delay3}`}>
           <h2 className={styles.sectionTitle}>Contact</h2>
           <p className={styles.text}>Contact me at gmail</p>
         </section>
