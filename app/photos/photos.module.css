@@ -1,6 +1,12 @@
-.page {
+.container { 
+  min-height: 100vh;
+  background-color: #f9fafb;
   padding: 2rem;
-  max-width: 1000px;
+}
+
+/* centers content */
+.content {
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -63,3 +69,11 @@
   color: #111827;
   line-height: 1;       
 }
+
+/* role text */
+.subtitle {
+  font-size: 1.25rem;
+  color: #6b7280;
+  margin-top: 1rem;
+}
+

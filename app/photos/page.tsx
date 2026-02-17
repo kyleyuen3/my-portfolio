@@ -3,7 +3,8 @@ import styles from "./photos.module.css";
 
 export default function PhotosPage() {
   return (
-    <main className={styles.page}>
+    <main className={styles.container}>
+        <div className={styles.content}>
         {/* Header */}
         <header className={styles.header}>
           <div className={styles.headerTop}>
@@ -36,6 +37,7 @@ export default function PhotosPage() {
             className={styles.photo}
             />
         </div>
+       </div> 
     </main>
   );
 }
