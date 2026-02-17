@@ -23,6 +23,8 @@ export default function Home() {
           <p className={styles.text}>Currently building Projects</p>
         </section>
 
+        
+
       </div>
     </main>
   )

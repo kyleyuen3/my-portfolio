@@ -89,3 +89,12 @@
 .projectLink:hover {
   text-decoration: underline;
 }
+
+/* Horizontal grid for cards */
+.projectsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
