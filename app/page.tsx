@@ -3,8 +3,8 @@ import styles from './page.module.css'
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-50 p-8">
-      <div className="max-w-4xl mx-auto">
+    <main className="{styles.container}">
+      <div className="{styles.content}">
 
         {/* Header */}
         <h1 className="text-4xl font-bold text-gray-900">Kyle</h1>
