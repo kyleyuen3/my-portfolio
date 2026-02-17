@@ -21,9 +21,29 @@ export default function Home() {
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>Projects</h2>
           <p className={styles.text}>Currently building Projects</p>
+          
+          {/* Grid */}
+          <div className={styles.projectsGrid}>
+
+            {/*Project #1*/}
+            <div className={styles.projectCard}>
+              
+            </div>
+
+            {/*Project #2*/}
+            <div className={styles.projectCard}>
+              
+            </div>
+            
+            {/*Project #3*/}
+            <div className={styles.projectCard}>
+              
+            </div>
+            
+          </div>
         </section>
 
-        
+
 
       </div>
     </main>
