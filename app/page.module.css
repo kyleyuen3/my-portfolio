@@ -1,14 +1,16 @@
 /* page background */
-.container { 
+.container {
   min-height: 100vh;
-  background-color: #f9fafb;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 /* centers content */
 .content {
+  flex: 1; 
   max-width: 800px;
   margin: 0 auto;
+  padding: 2rem;
 }
 
 /* main name */
@@ -122,7 +124,15 @@
 
 /* header */
 .header {
-  margin-bottom: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  padding: 1.5rem 2rem;
+
+  background: transparent;   /* THIS removes gray bar */
+  z-index: 10;
 }
 
 /* styling header */
@@ -132,4 +142,27 @@
   align-items: center;  
 }
 
+/* image background */
+.hero {
+  width: 100%;
+  height: clamp(400px, 70vh, 800px);
+  background-image: url("/photos/sunsetSF.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* footer */
+.footer {
+  margin-top: 4rem;
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid #e5e7eb;
+  background-color: white;
+}
+
+/* footer text */
+.footerText {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
 
