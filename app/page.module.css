@@ -47,3 +47,45 @@
   line-height: 1.7;
   margin-top: 0.5rem;
 }
+
+/* creates a project card */
+.projectCard {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+/* creates a title for the project card */
+.projectTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+/* project description */
+.projectDesc {
+  margin-top: 0.5rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* project links layout */
+.projectLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+/* project links style */
+.projectLink {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* when hovering the link */
+.projectLink:hover {
+  text-decoration: underline;
+}
