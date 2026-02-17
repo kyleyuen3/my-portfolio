@@ -13,7 +13,13 @@ export default function Home() {
         {/* About Section */}
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>About Me</h2>
-          <p>My name is Kyle and this is my website.</p>
+          <p className={styles.text}>My name is Kyle and this is my website.</p>
+        </section>
+
+        {/* Project Section */}
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>Projects</h2>
+          <p className={styles.text}>Currently building Projects</p>
         </section>
 
 
