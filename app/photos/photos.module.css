@@ -22,3 +22,44 @@
   height: auto;
   border-radius: 8px;
 }
+
+/* Nav bar */
+.nav {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+/* links on nav bar */
+.navLink {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
+
+/* hovering link in nav bar */
+.navLink:hover {
+  background: #eef2ff;
+}
+
+/* header */
+.header {
+  margin-bottom: 2rem;
+}
+
+/* styling header */
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+/* main name */
+.title {
+  margin: 0;           
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #111827;
+  line-height: 1;       
+}

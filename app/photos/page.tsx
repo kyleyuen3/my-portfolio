@@ -4,17 +4,38 @@ import styles from "./photos.module.css";
 export default function PhotosPage() {
   return (
     <main className={styles.page}>
-      <h1>Photos</h1>
+        {/* Header */}
+        <header className={styles.header}>
+          <div className={styles.headerTop}>
 
-      <div className={styles.grid}>
-        <Image
-          src="/photos/kyleVancouver.jpg"
-          alt="Kyle in Vancouver"
-          width={600}
-          height={600}
-          className={styles.photo}
-        />
-      </div>
+            {/* Name */}
+            <h1 className={styles.title}>Kyle Yuen</h1>
+
+            {/* Nav */}
+            <nav className={styles.nav}>
+              <a className={styles.navLink} href="/#home">Home</a>
+              <a className={styles.navLink} href="/#about">About</a>
+              <a className={styles.navLink} href="/#projects">Portfolio</a>
+              <a className={styles.navLink} href="/photos">Photos</a>
+              <a className={styles.navLink} href="/#contact">Contact</a>
+            </nav>
+          </div>
+
+          {/* Subtitle */}
+          <p className={styles.subtitle}>Full Stack Developer</p>
+
+        </header>  
+        <h1>Photos</h1>
+
+        <div className={styles.grid}>
+            <Image
+            src="/photos/kyleVancouver.jpg"
+            alt="Kyle in Vancouver"
+            width={600}
+            height={600}
+            className={styles.photo}
+            />
+        </div>
     </main>
   );
 }

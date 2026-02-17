@@ -15,6 +15,7 @@ export default function Home() {
 
             {/* Nav */}
             <nav className={styles.nav}>
+              <a className={styles.navLink} href="#home">Home</a>
               <a className={styles.navLink} href="#about">About</a>
               <a className={styles.navLink} href="#projects">Portfolio</a>
               <a className={styles.navLink} href="/photos">Photos</a>
