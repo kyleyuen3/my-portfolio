@@ -110,11 +110,9 @@
 
 /* links on nav bar */
 .navLink {
-  color: #111827;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 0.4rem 0.7rem;
-  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
 }
 
 /* hovering link in nav bar */
@@ -131,7 +129,7 @@
 .headerTop {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center;  
 }
 
 
