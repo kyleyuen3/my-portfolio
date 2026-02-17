@@ -15,7 +15,6 @@ export default function Home() {
 
             {/* Nav */}
             <nav className={styles.nav}>
-              <a className={styles.navLink} href="#home">Home</a>
               <a className={styles.navLink} href="#about">About</a>
               <a className={styles.navLink} href="#projects">Portfolio</a>
               <a className={styles.navLink} href="#photos">Photos</a>
@@ -29,13 +28,13 @@ export default function Home() {
         </header>
 
         {/* About Section */}
-        <section className={styles.section}>
+        <section id="about" className={styles.section}>
           <h2 className={styles.sectionTitle}>About Me</h2>
           <p className={styles.text}>My name is Kyle and this is my website.</p>
         </section>
 
         {/* Project Section */}
-        <section className={styles.section}>
+        <section id="projects" className={styles.section}>
           <h2 className={styles.sectionTitle}>Projects</h2>
           <p className={styles.text}>Currently building Projects</p>
           
@@ -60,7 +59,11 @@ export default function Home() {
           </div>
         </section>
 
-
+        {/* Contact */}
+        <section id="contact" className={styles.section}>
+          <h2 className={styles.sectionTitle}>Contact</h2>
+          <p className={styles.text}>Contact me at gmail</p>
+        </section>
 
       </div>
     </main>
