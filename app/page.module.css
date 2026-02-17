@@ -98,3 +98,26 @@
   margin-top: 1rem;
 }
 
+/* Nav bar */
+.nav {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+/* links on nav bar */
+.navLink {
+  color: #111827;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+}
+
+/* hovering link in nav bar */
+.navLink:hover {
+  background: #eef2ff;
+}
+
+

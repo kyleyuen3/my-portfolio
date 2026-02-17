@@ -7,7 +7,7 @@ export default function Home() {
       <div className={styles.content}>
 
         {/* Header */}
-          <h1 className={styles.title}>Kyle</h1>
+          <h1 className={styles.title}>Kyle Yuen</h1>
           <p className={styles.subtitle}>Full Stack Developer</p>
 
 
