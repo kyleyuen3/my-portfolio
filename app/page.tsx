@@ -3,8 +3,8 @@ import styles from './page.module.css'
 
 export default function Home() {
   return (
-    <main className="{styles.container}">
-      <div className="{styles.content}">
+    <main className={styles.container}>
+      <div className={styles.content}>
 
         {/* Header */}
         <h1 className="text-4xl font-bold text-gray-900">Kyle</h1>
@@ -21,7 +21,6 @@ export default function Home() {
           <h2 className={styles.sectionTitle}>Projects</h2>
           <p className={styles.text}>Currently building Projects</p>
         </section>
-
 
       </div>
     </main>
