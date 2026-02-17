@@ -7,9 +7,26 @@ export default function Home() {
       <div className={styles.content}>
 
         {/* Header */}
-          <h1 className={styles.title}>Kyle Yuen</h1>
+        <header className={styles.header}>
+          <div className={styles.headerTop}>
+
+            {/* Name */}
+            <h1 className={styles.title}>Kyle Yuen</h1>
+
+            {/* Nav */}
+            <nav className={styles.nav}>
+              <a className={styles.navLink} href="#home">Home</a>
+              <a className={styles.navLink} href="#about">About</a>
+              <a className={styles.navLink} href="#projects">Portfolio</a>
+              <a className={styles.navLink} href="#photos">Photos</a>
+              <a className={styles.navLink} href="#contact">Contact</a>
+            </nav>
+          </div>
+
+          {/* Subtitle */}
           <p className={styles.subtitle}>Full Stack Developer</p>
 
+        </header>
 
         {/* About Section */}
         <section className={styles.section}>
