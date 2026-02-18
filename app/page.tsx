@@ -4,8 +4,6 @@ import styles from './page.module.css'
 export default function Home() {
   return (
     <main className={styles.container}>
-      <section className={`${styles.hero} ${styles.fadeUp}`} />
-
       {/* Header */}
       <header className={styles.header}>
         <div className={styles.headerTop}>
@@ -24,7 +22,7 @@ export default function Home() {
         </div>
 
         {/* Subtitle */}
-        <p className={styles.subtitle}>Full Stack Developer</p>
+        <p className={styles.subtitle}>Software Engineer | Full Stack Developer | AI Enthusiast</p>
 
       </header>
 
@@ -37,8 +35,32 @@ export default function Home() {
 
         {/* Project Section */}
         <section id="projects" className={`${styles.section} ${styles.fadeUp} ${styles.delay2}`}>
-          <h2 className={styles.sectionTitle}>Projects</h2>
-          <p className={styles.text}>Currently building Projects</p>
+          <h2 className={styles.sectionTitle}>Featured Projects</h2>
+          
+          {/* Grid */}
+          <div className={styles.projectsGrid}>
+
+            {/*Project #1*/}
+            <div className={styles.projectCard}>
+              
+            </div>
+
+            {/*Project #2*/}
+            <div className={styles.projectCard}>
+              
+            </div>
+            
+            {/*Project #3*/}
+            <div className={styles.projectCard}>
+              
+            </div>
+            
+          </div>
+        </section>
+
+                {/* Project Section */}
+        <section id="projects" className={`${styles.section} ${styles.fadeUp} ${styles.delay2}`}>
+          <h2 className={styles.sectionTitle}>Projects in Progress</h2>
           
           {/* Grid */}
           <div className={styles.projectsGrid}>
@@ -63,8 +85,17 @@ export default function Home() {
 
         {/* Contact */}
         <section id="contact" className={`${styles.section} ${styles.fadeUp} ${styles.delay3}`}>
-          <h2 className={styles.sectionTitle}>Contact</h2>
-          <p className={styles.text}>Contact me at gmail</p>
+          <div className={styles.sectionHeader}>
+            <h2 className={styles.sectionTitle}>Contact</h2>
+            <p className={styles.sectionSubtitle}>Let's connect!</p>
+          </div>
+
+          <div className={styles.contactRow}>
+            <a className={styles.contactBtn} href="kyleyuen3@gmail.com">Email</a>
+            <a className={styles.contactBtn} href="https://www.github.com/kyleyuen3" target="_blank" rel="noreferrer">GitHub</a>
+            <a className={styles.contactBtn} href="https://www.linkedin.com/in/kyleyuen3/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+
         </section>
 
 
