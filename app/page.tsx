@@ -133,7 +133,7 @@ export default function Home() {
         {/* Contact */}
         <section id="contact" className={`${styles.section} ${styles.fadeUp} ${styles.delay3}`}>
           <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>Contact</h2>
+            <h2 className={styles.sectionTitle}>Contact Information</h2>
             <p className={styles.sectionSubtitle}>Let's connect!</p>
           </div>
 
