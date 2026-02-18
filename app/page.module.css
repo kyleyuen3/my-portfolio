@@ -1,3 +1,4 @@
+/* ---------- Main Page ---------- */
 /* page background */
 .container {
   min-height: 100vh;
@@ -7,19 +8,27 @@
 
 /* centers content */
 .content {
-  flex: 1; 
-  max-width: 800px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+
+  flex: 1;   /* THIS pushes footer to bottom */
+}
+
+/* keeps header aligned with centered content */
+.inner {
+  max-width: 900px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 20px;
 }
 
 /* main name */
 .title {
-  margin: 0;           
+  margin: 0;
   font-size: 2.5rem;
   font-weight: bold;
   color: #111827;
-  line-height: 1;       
+  line-height: 1;
 }
 
 /* role text */
@@ -27,15 +36,12 @@
   font-size: 1.25rem;
   color: #6b7280;
   margin-top: 1rem;
+  text-align: center;
 }
 
 /* reuseable block */
 .section {
-  background-color: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-  margin-top: 3rem;
+  margin-top: 40px;
 }
 
 /* title for section */
@@ -52,12 +58,74 @@
   margin-top: 0.5rem;
 }
 
+/* ---------- Header / Nav ---------- */
+/* header */
+.header {
+  width: 100%;
+  padding: 1.5rem 0;         /* use inner for left/right padding */
+  background: transparent;   /* removes gray bar */
+  z-index: 10;
+}
+
+/* styling header */
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Nav bar */
+.nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* links on nav bar */
+.navLink {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+  padding: 0.35rem 0.6rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #111827;
+
+  /* hover polish */
+  transition: background 150ms ease, transform 150ms ease;
+}
+
+/* hovering link in nav bar */
+.navLink:hover {
+  background: #eef2ff;
+  transform: translateY(-1px);
+}
+
+/* ---------- Projects ---------- */
+
+/* Horizontal grid for cards */
+.projectsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
 /* creates a project card */
 .projectCard {
   border: 1px solid #e5e7eb;
   border-radius: 10px;
   padding: 1rem;
   margin-top: 1rem;
+
+  /* Hover polish */
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+/* hover project card */
+.projectCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.08);
 }
 
 /* creates a title for the project card */
@@ -94,62 +162,42 @@
   text-decoration: underline;
 }
 
-/* Horizontal grid for cards */
-.projectsGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
-  margin-top: 1rem;
+/* ---------- Contact ---------- */
+
+/* header for sections */
+.sectionHeader {
+  margin-bottom: 1rem;
 }
 
-/* Nav bar */
-.nav {
+/* subtitle text for sections */
+.sectionSubtitle {
+  color: #6b7280;
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
+}
+
+/* organizing contact section */
+.contactRow {
   display: flex;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
 
-/* links on nav bar */
-.navLink {
+/* button for contact section */
+.contactBtn {
   display: inline-flex;
   align-items: center;
-  line-height: 1;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  text-decoration: none;
+  color: #111827;
+  font-weight: 700;
+  background: white;
 }
 
-/* hovering link in nav bar */
-.navLink:hover {
-  background: #eef2ff;
-}
-
-/* header */
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-
-  padding: 1.5rem 2rem;
-
-  background: transparent;   /* THIS removes gray bar */
-  z-index: 10;
-}
-
-/* styling header */
-.headerTop {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;  
-}
-
-/* image background */
-.hero {
-  width: 100%;
-  height: clamp(400px, 70vh, 800px);
-  background-image: url("/photos/sunsetSF.jpg");
-  background-size: cover;
-  background-position: center;
-}
+/* ---------- Footer ---------- */
 
 /* footer */
 .footer {
@@ -188,54 +236,19 @@
 .delay2 { animation-delay: 240ms; }
 .delay3 { animation-delay: 360ms; }
 
-/* ---------- Hover polish ---------- */
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
 
-.projectCard {
-  transition: transform 180ms ease, box-shadow 180ms ease;
-}
+  .headerTop {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
 
-.projectCard:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 18px rgba(0,0,0,0.08);
-}
-
-.navLink {
-  transition: background 150ms ease, transform 150ms ease;
-}
-
-.navLink:hover {
-  transform: translateY(-1px);
-}
-
-/* header for sections */
-.sectionHeader {
-  margin-bottom: 1rem;
-}
-
-/* subtitle text for sections */
-.sectionSubtitle {
-  color: #6b7280;
-  margin-top: 0.25rem;
-  font-size: 0.95rem;
-}
-
-/* organizing contact section */
-.contactRow {
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-}
-
-/* button for contact section */
-.contactBtn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.75rem 1rem;
-  border-radius: 10px;
-  border: 1px solid #e5e7eb;
-  text-decoration: none;
-  color: #111827;
-  font-weight: 700;
-  background: white;
+  .nav {
+    flex-wrap: wrap;
+  }
 }

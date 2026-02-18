@@ -6,24 +6,25 @@ export default function Home() {
     <main className={styles.container}>
       {/* Header */}
       <header className={styles.header}>
-        <div className={styles.headerTop}>
+        <div className={styles.inner}>
+          <div className={styles.headerTop}>
 
-          {/* Name */}
-          <h1 className={styles.title}>Kyle Yuen</h1>
+            {/* Name */}
+            <h1 className={styles.title}>Kyle Yuen</h1>
 
-          {/* Nav */}
-          <nav className={styles.nav}>
-            <a className={styles.navLink} href="#home">Home</a>
-            <a className={styles.navLink} href="#about">About</a>
-            <a className={styles.navLink} href="#projects">Portfolio</a>
-            <a className={styles.navLink} href="/photos">Photos</a>
-            <a className={styles.navLink} href="#contact">Contact</a>
-          </nav>
+            {/* Nav */}
+            <nav className={styles.nav}>
+              <a className={styles.navLink} href="#home">Home</a>
+              <a className={styles.navLink} href="#about">About</a>
+              <a className={styles.navLink} href="#projects">Portfolio</a>
+              <a className={styles.navLink} href="/photos">Photos</a>
+              <a className={styles.navLink} href="#contact">Contact</a>
+            </nav>
+          </div>
+
+          {/* Subtitle */}
+          <p className={styles.subtitle}>Software Engineer | Full Stack Developer | AI Enthusiast</p>
         </div>
-
-        {/* Subtitle */}
-        <p className={styles.subtitle}>Software Engineer | Full Stack Developer | AI Enthusiast</p>
-
       </header>
 
       <div className={styles.content}>
