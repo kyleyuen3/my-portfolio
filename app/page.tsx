@@ -34,6 +34,53 @@ export default function Home() {
           <p className={styles.text}>I’m Kyle Yuen — a Computer Science graduate passionate about Software Development, Artifical Intelligence, and mobile app development. I enjoy solving problems, building projects that help people, and continuously learning. I also enjoy traveling, trying new restaurants and hanging out with friends and family.</p>
         </section>
 
+        {/* Skills Section */}
+        <section id="skills" className={`${styles.section} ${styles.fadeUp} ${styles.delay1}`}>
+          <h2 className={styles.sectionTitle}>Skills</h2>
+
+          <div className={styles.skillsGrid}>
+
+            <div>
+              <h3 className={styles.skillCategory}>Languages</h3>
+              <div className={styles.skillTags}>
+                <span className={styles.skillTag}>Java</span>
+                <span className={styles.skillTag}>Python</span>
+                <span className={styles.skillTag}>JavaScript</span>
+                <span className={styles.skillTag}>SQL</span>
+                <span className={styles.skillTag}>C++</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 className={styles.skillCategory}>Frontend</h3>
+              <div className={styles.skillTags}>
+                <span className={styles.skillTag}>React</span>
+                <span className={styles.skillTag}>Next.js</span>
+                <span className={styles.skillTag}>HTML</span>
+                <span className={styles.skillTag}>CSS</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 className={styles.skillCategory}>Backend</h3>
+              <div className={styles.skillTags}>
+                <span className={styles.skillTag}>Node.js</span>
+                <span className={styles.skillTag}>Express</span>
+                <span className={styles.skillTag}>MySQL</span>
+                <span className={styles.skillTag}>REST APIs</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 className={styles.skillCategory}>AI / ML</h3>
+              <div className={styles.skillTags}>
+
+              </div>
+            </div>
+
+          </div>
+        </section>
+
         {/* Project Section */}
         <section id="projects" className={`${styles.section} ${styles.fadeUp} ${styles.delay2}`}>
           <h2 className={styles.sectionTitle}>Featured Projects</h2>

@@ -101,6 +101,49 @@
   transform: translateY(-1px);
 }
 
+/* ---------- Skills Section ---------- */
+/* grid for skills */
+.skillsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+/* category for skills */
+.skillCategory {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #111827;
+}
+
+/* skill tags */
+.skillTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* skill tags styling */
+.skillTag {
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  background: #f3f4f6;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+  transition: transform 150ms ease, background 150ms ease;
+}
+
+/* hovering animation for skills */
+.skillTag:hover {
+  transform: translateY(-2px);
+  background: #e0e7ff;
+}
+
+
 /* ---------- Projects ---------- */
 
 /* Horizontal grid for cards */
